@@ -1,6 +1,4 @@
-from Datasett import eksempel_sett
 import numpy
-import matplotlib.pyplot as plt
 
 def mean_of_set(set):
     """
@@ -82,5 +80,21 @@ def percentile_of_set(set, percentile):
         x: calculated percentile of set
     """
     x = numpy.percentile(set, percentile)
+
+    return x
+
+
+def uniform_set(set, value, amount):
+    """
+    Returns a random set of numbers between values * amount times of the set.
+
+    Args:
+        set: a set of numbers
+        value: the values we are creating numbers between
+        amount: how many of these values we are creating
+    Returns:
+        x: a set with numbers between values * amount times
+    """
+    x = numpy.random.uniform(set, value, amount)
 
     return x
