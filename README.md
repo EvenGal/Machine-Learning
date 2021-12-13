@@ -1,2 +1,2 @@
 # Machine-Learning
-Maskinlæring i Python
+Machine Learning in Python
